@@ -181,3 +181,42 @@
 21:36:04.182993 version@stat F·[2 1] S·215KiB[3KiB 211KiB] Sc·[0.50 0.00]
 21:36:04.184680 db@janitor F·5 G·0
 21:36:04.184703 db@open done T·30.834734ms
+=============== Apr 4, 2017 (BST) ===============
+14:09:02.844642 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:09:02.846826 version@stat F·[2 1] S·215KiB[3KiB 211KiB] Sc·[0.50 0.00]
+14:09:02.846865 db@open opening
+14:09:02.846998 journal@recovery F·2
+14:09:02.848437 journal@recovery recovering @40
+14:09:02.848940 journal@recovery recovering @51
+14:09:02.850445 memdb@flush created L0@52 N·3 S·401B "Blo..ion,v7399":"eth..\xd2*\xb3,v7400"
+14:09:02.850485 version@stat F·[3 1] S·216KiB[4KiB 211KiB] Sc·[0.75 0.00]
+14:09:02.852062 memdb@flush created L0@54 N·3 S·401B "Blo..ion,v9449":"eth..\xd2*\xb3,v9450"
+14:09:02.853649 version@stat F·[4 1] S·216KiB[4KiB 211KiB] Sc·[1.00 0.00]
+14:09:02.854606 db@janitor F·9 G·2
+14:09:02.854636 db@janitor removing table-48
+14:09:02.854706 db@janitor removing manifest-52
+14:09:02.854786 db@open done T·7.91177ms
+14:09:02.855470 table@compaction L0·4 -> L1·1 S·216KiB Q·9452
+14:09:02.858018 db@close closing
+14:09:02.865276 table@build created L1@56 N·3510 S·214KiB "\x01\x1c\xcb..\x13 \x1c,v6008":"\xfe\xe0\xcc..q\xae\x85,v2911"
+14:09:02.865314 table@build exiting
+14:09:02.865322 table@build revert @56
+14:09:02.865523 db@close done T·7.508855ms
+=============== Apr 4, 2017 (BST) ===============
+14:09:02.869898 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:09:02.870169 version@stat F·[4 1] S·216KiB[4KiB 211KiB] Sc·[1.00 0.00]
+14:09:02.870197 db@open opening
+14:09:02.870258 journal@recovery F·1
+14:09:02.898110 journal@recovery recovering @55
+14:09:02.929109 version@stat F·[4 1] S·216KiB[4KiB 211KiB] Sc·[1.00 0.00]
+14:09:02.930078 db@janitor F·7 G·0
+14:09:02.930100 db@open done T·59.896681ms
+14:09:02.930214 table@compaction L0·4 -> L1·1 S·216KiB Q·9452
+14:09:02.936385 table@build created L1@58 N·3510 S·214KiB "\x01\x1c\xcb..\x13 \x1c,v6008":"\xfe\xe0\xcc..q\xae\x85,v2911"
+14:09:02.936467 version@stat F·[0 1] S·214KiB[0B 214KiB] Sc·[0.00 0.00]
+14:09:02.936808 table@compaction committed F-4 S-1KiB Ke·0 D·36 T·6.524342ms
+14:09:02.936935 table@remove removed @54
+14:09:02.937010 table@remove removed @52
+14:09:02.937072 table@remove removed @37
+14:09:02.937134 table@remove removed @32
+14:09:02.937216 table@remove removed @31
