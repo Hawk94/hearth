@@ -3,6 +3,30 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+var addToLog = function(id, txt) {
+  $(id + " .logs").append("<br>" + txt);
+};
+
+// ===========================
+// Blockchain example
+// ===========================
+$(document).ready(function() {
+
+  $("#blockchain button.set").click(function() {
+    var value = parseInt($("#blockchain input.text").val(), 10);
+    SimpleStorage.set(value);
+    addToLog("#blockchain", "SimpleStorage.set(" + value + ")");
+  });
+
+  $("#blockchain button.get").click(function() {
+    SimpleStorage.get().then(function(value) {
+      $("#blockchain .value").html(value.toNumber());
+    });
+    addToLog("#blockchain", "SimpleStorage.get()");
+  });
+
+});
+
 
 (function($) {
 

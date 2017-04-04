@@ -1,6 +1,7 @@
 {
   "contracts": ["app/contracts/**"],
   "app": {
+    "assets/js/app.js": ["embark.js", "app/assets/js/_vendor/jquery.min.js", "app/assets/js/_vendor/bootstrap.min.js"],
     "assets/css/": ["app/assets/css/**"],
     "assets/fonts/": ["app/assets/fonts/**"],
     "images/": ["app/images/**"],

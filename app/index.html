@@ -32,16 +32,28 @@
 
 				<!-- Two -->
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
-						<div class="content">
-							<h2>Magna etiam feugiat</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
-							<ul class="actions vertical">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/spotlight01.jpg" alt="" />
-						</div>
+						<div role="tabpanel" class="tab-pane active" id="blockchain">
+			        <h3> 1. Set the value in the blockchain</h3>
+			        <div class="form-group form-inline">
+			          <input type="text" class="text form-control" value="10">
+			          <button class="set btn btn-primary">Set Value</button>
+			          <p>Once you set the value, the transaction will need to be mined and then the value will be updated on the blockchain.</p>
+			        </div>
+
+			        <h3> 2. Get the current value</h3>
+			        <div class="form-group">
+			          <div>
+			            current value is <span class="value"></span>
+			          </div>
+			          <button class="get btn btn-primary">Get Value</button>
+			          <p>Click the button to get the current value. The initial value is 100.</p>
+			        </div>
+
+			        <h3> 3. Contract Calls </h3>
+			        <p>Javascript calls being made: </p>
+			        <div class="logs">
+			        </div>
+			      </div>
 					</section>
 
 				<!-- Three -->
